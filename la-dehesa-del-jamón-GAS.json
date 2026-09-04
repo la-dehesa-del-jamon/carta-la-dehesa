@@ -1657,10 +1657,18 @@
     "LICORES / SPIRITS & SHOTS"
   ],
   "categoryTypes": {
-    "POSTRES CASEROS / HOMEMADE DESSERTS": "por unidad",
+    "HOY OFRECEMOS: / DAILY SPECIALS": "por unidad",
+    "DE PICOTEO / APPETIZERS": "tapa-plato",
+    "PARA COMPARTIR / TO SHARE": "tapa-plato",
     "MONTAÍTOS / TAOSTED ROLLS": "por unidad",
-    "LICORES / SPIRITS & SHOTS": "rate_1788431377038",
-    "HOY OFRECEMOS: / DAILY SPECIALS": "por unidad"
+    "FRESQUITOS / CHILLED PLATES": "tapa-plato",
+    "DE LA MAR / SEAFOOD": "tapa-plato",
+    "TABLA DE PANES / ARTISAN TOASTS": "tapa-plato",
+    "CARNÍVORO / MEAT LOVER'S": "tapa-plato",
+    "DE ZAMORA Y ASTURIAS / TASTE OF ZAMORA & ASTURIAS": "tapa-plato",
+    "POSTRES CASEROS / HOMEMADE DESSERTS": "por unidad",
+    "BEBIDAS / BEVERAGES": "copa-botella",
+    "LICORES / SPIRITS & SHOTS": "rate_1788431377038"
   },
   "rateTypes": [
     {
@@ -1835,6 +1843,80 @@
         "url": "https://wa.me/34654574771",
         "active": true
       }
+    ],
+    "payments": [
+      {
+        "id": "cash",
+        "labelEs": "Efectivo",
+        "labelEn": "Cash",
+        "active": true
+      },
+      {
+        "id": "cards",
+        "labelEs": "Tarjetas",
+        "labelEn": "Cards",
+        "active": true
+      },
+      {
+        "id": "bizum",
+        "labelEs": "Bizum",
+        "labelEn": "Bizum",
+        "active": true
+      },
+      {
+        "id": "applepay",
+        "labelEs": "Apple Pay",
+        "labelEn": "Apple Pay",
+        "active": false
+      },
+      {
+        "id": "googlepay",
+        "labelEs": "Google Pay",
+        "labelEn": "Google Pay",
+        "active": true
+      },
+      {
+        "id": "samsungpay",
+        "labelEs": "Samsung Pay",
+        "labelEn": "Samsung Pay",
+        "active": true
+      },
+      {
+        "id": "ticketrestaurant",
+        "labelEs": "Ticket Restaurant",
+        "labelEn": "Ticket Restaurant",
+        "active": false
+      },
+      {
+        "id": "chequegourmet",
+        "labelEs": "Cheque Gourmet",
+        "labelEn": "Cheque Gourmet",
+        "active": false
+      },
+      {
+        "id": "sodexo",
+        "labelEs": "Sodexo Pluxee",
+        "labelEn": "Sodexo Pluxee",
+        "active": false
+      },
+      {
+        "id": "qr",
+        "labelEs": "Código QR",
+        "labelEn": "QR Code",
+        "active": false
+      },
+      {
+        "id": "paypal",
+        "labelEs": "PayPal",
+        "labelEn": "PayPal",
+        "active": true
+      },
+      {
+        "id": "transfer",
+        "labelEs": "Transferencia",
+        "labelEn": "Bank Transfer",
+        "active": true
+      }
     ]
   },
   "clientConfig": {
@@ -1915,11 +1997,11 @@
         },
         "comidas-almuerzos": {
           "id": "comidas-almuerzos",
-          "enabled": false,
+          "enabled": true,
           "labelEs": "Comidas y Almuerzos",
           "labelEn": "Lunch",
-          "startTime": "13:00",
-          "endTime": "16:30",
+          "startTime": "12:30",
+          "endTime": "16:00",
           "days": [
             1,
             2,
@@ -1975,7 +2057,7 @@
         },
         "cenas-noche": {
           "id": "cenas-noche",
-          "enabled": false,
+          "enabled": true,
           "labelEs": "Cenas y Noche",
           "labelEn": "Dinner",
           "startTime": "20:00",
@@ -2197,18 +2279,477 @@
     "audioBtnBgColor": "#433819",
     "audioBtnIconColor": "#cfab3f",
     "audioBtnBorderColor": "#86702d",
-    "isPortable": false
+    "isPortable": false,
+    "hideAllergenLegend": true
   },
   "categoryBanners": {},
   "categoryTimeSlots": {
-    "MONTAÍTOS / TAOSTED ROLLS": {
-      "slots": [],
-      "slotType": "todo-el-dia",
-      "startTime": "08:00",
-      "endTime": "12:30",
+    "HOY OFRECEMOS: / DAILY SPECIALS": {
+      "slots": [
+        {
+          "slotType": "comidas-almuerzos",
+          "startTime": "12:30",
+          "endTime": "16:00",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Comidas y Almuerzos"
+        },
+        {
+          "slotType": "cenas-noche",
+          "startTime": "20:00",
+          "endTime": "23:30",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Cenas y Noche"
+        }
+      ],
+      "slotType": "comidas-almuerzos",
+      "startTime": "12:30",
+      "endTime": "16:00",
       "days": [
         1,
-        2,
+        3,
+        4,
+        5,
+        6,
+        0
+      ]
+    },
+    "DE PICOTEO / APPETIZERS": {
+      "slots": [
+        {
+          "slotType": "comidas-almuerzos",
+          "startTime": "12:30",
+          "endTime": "16:00",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Comidas y Almuerzos"
+        },
+        {
+          "slotType": "cenas-noche",
+          "startTime": "20:00",
+          "endTime": "23:30",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Cenas y Noche"
+        }
+      ],
+      "slotType": "comidas-almuerzos",
+      "startTime": "12:30",
+      "endTime": "16:00",
+      "days": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        0
+      ]
+    },
+    "PARA COMPARTIR / TO SHARE": {
+      "slots": [
+        {
+          "slotType": "comidas-almuerzos",
+          "startTime": "12:30",
+          "endTime": "16:00",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Comidas y Almuerzos"
+        },
+        {
+          "slotType": "cenas-noche",
+          "startTime": "20:00",
+          "endTime": "23:30",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Cenas y Noche"
+        }
+      ],
+      "slotType": "comidas-almuerzos",
+      "startTime": "12:30",
+      "endTime": "16:00",
+      "days": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        0
+      ]
+    },
+    "MONTAÍTOS / TAOSTED ROLLS": {
+      "slots": [
+        {
+          "slotType": "comidas-almuerzos",
+          "startTime": "12:30",
+          "endTime": "16:00",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Comidas y Almuerzos"
+        },
+        {
+          "slotType": "cenas-noche",
+          "startTime": "20:00",
+          "endTime": "23:30",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Cenas y Noche"
+        }
+      ],
+      "slotType": "comidas-almuerzos",
+      "startTime": "12:30",
+      "endTime": "16:00",
+      "days": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        0
+      ]
+    },
+    "FRESQUITOS / CHILLED PLATES": {
+      "slots": [
+        {
+          "slotType": "comidas-almuerzos",
+          "startTime": "12:30",
+          "endTime": "16:00",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Comidas y Almuerzos"
+        },
+        {
+          "slotType": "cenas-noche",
+          "startTime": "20:00",
+          "endTime": "23:30",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Cenas y Noche"
+        }
+      ],
+      "slotType": "comidas-almuerzos",
+      "startTime": "12:30",
+      "endTime": "16:00",
+      "days": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        0
+      ]
+    },
+    "DE LA MAR / SEAFOOD": {
+      "slots": [
+        {
+          "slotType": "comidas-almuerzos",
+          "startTime": "12:30",
+          "endTime": "16:00",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Comidas y Almuerzos"
+        },
+        {
+          "slotType": "cenas-noche",
+          "startTime": "20:00",
+          "endTime": "23:30",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Cenas y Noche"
+        }
+      ],
+      "slotType": "comidas-almuerzos",
+      "startTime": "12:30",
+      "endTime": "16:00",
+      "days": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        0
+      ]
+    },
+    "TABLA DE PANES / ARTISAN TOASTS": {
+      "slots": [
+        {
+          "slotType": "comidas-almuerzos",
+          "startTime": "12:30",
+          "endTime": "16:00",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Comidas y Almuerzos"
+        },
+        {
+          "slotType": "cenas-noche",
+          "startTime": "20:00",
+          "endTime": "23:30",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Cenas y Noche"
+        }
+      ],
+      "slotType": "comidas-almuerzos",
+      "startTime": "12:30",
+      "endTime": "16:00",
+      "days": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        0
+      ]
+    },
+    "CARNÍVORO / MEAT LOVER'S": {
+      "slots": [
+        {
+          "slotType": "comidas-almuerzos",
+          "startTime": "12:30",
+          "endTime": "16:00",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Comidas y Almuerzos"
+        },
+        {
+          "slotType": "cenas-noche",
+          "startTime": "20:00",
+          "endTime": "23:30",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Cenas y Noche"
+        }
+      ],
+      "slotType": "comidas-almuerzos",
+      "startTime": "12:30",
+      "endTime": "16:00",
+      "days": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        0
+      ]
+    },
+    "DE ZAMORA Y ASTURIAS / TASTE OF ZAMORA & ASTURIAS": {
+      "slots": [
+        {
+          "slotType": "comidas-almuerzos",
+          "startTime": "12:30",
+          "endTime": "16:00",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Comidas y Almuerzos"
+        },
+        {
+          "slotType": "cenas-noche",
+          "startTime": "20:00",
+          "endTime": "23:30",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Cenas y Noche"
+        }
+      ],
+      "slotType": "comidas-almuerzos",
+      "startTime": "12:30",
+      "endTime": "16:00",
+      "days": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        0
+      ]
+    },
+    "POSTRES CASEROS / HOMEMADE DESSERTS": {
+      "slots": [
+        {
+          "slotType": "comidas-almuerzos",
+          "startTime": "12:30",
+          "endTime": "16:00",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Comidas y Almuerzos"
+        },
+        {
+          "slotType": "cenas-noche",
+          "startTime": "20:00",
+          "endTime": "23:30",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Cenas y Noche"
+        }
+      ],
+      "slotType": "comidas-almuerzos",
+      "startTime": "12:30",
+      "endTime": "16:00",
+      "days": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        0
+      ]
+    },
+    "BEBIDAS / BEVERAGES": {
+      "slots": [
+        {
+          "slotType": "comidas-almuerzos",
+          "startTime": "12:30",
+          "endTime": "16:00",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Comidas y Almuerzos"
+        },
+        {
+          "slotType": "cenas-noche",
+          "startTime": "20:00",
+          "endTime": "23:30",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Cenas y Noche"
+        }
+      ],
+      "slotType": "comidas-almuerzos",
+      "startTime": "12:30",
+      "endTime": "16:00",
+      "days": [
+        1,
         3,
         4,
         5,
@@ -2217,28 +2758,41 @@
       ]
     },
     "LICORES / SPIRITS & SHOTS": {
-      "slots": [],
-      "slotType": "todo-el-dia",
-      "startTime": "08:00",
-      "endTime": "12:30",
+      "slots": [
+        {
+          "slotType": "comidas-almuerzos",
+          "startTime": "12:30",
+          "endTime": "16:00",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Comidas y Almuerzos"
+        },
+        {
+          "slotType": "cenas-noche",
+          "startTime": "20:00",
+          "endTime": "23:30",
+          "days": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            0
+          ],
+          "nameCustom": "Cenas y Noche"
+        }
+      ],
+      "slotType": "comidas-almuerzos",
+      "startTime": "12:30",
+      "endTime": "16:00",
       "days": [
         1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        0
-      ]
-    },
-    "HOY OFRECEMOS: / DAILY SPECIALS": {
-      "slots": [],
-      "slotType": "todo-el-dia",
-      "startTime": "08:00",
-      "endTime": "12:30",
-      "days": [
-        1,
-        2,
         3,
         4,
         5,
