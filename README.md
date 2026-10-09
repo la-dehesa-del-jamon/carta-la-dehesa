@@ -14,7 +14,7 @@
     
   </p>
 
-  <br><br> <a href="https://juanmadehesa-creator.github.io/carta-la-dehesa/" target="_blank">
+  <br><br> <a href="https://la-dehesa-del-jamon.github.io/carta-la-dehesa/" target="_blank">
     <img src="https://img.shields.io/badge/🚀_VER_CARTA_—_VIEW_MENU-f1c232?style=for-the-badge&labelColor=401201" alt="Ver Carta La Dehesa del Jamón" height="45">
   </a>
 </div>
